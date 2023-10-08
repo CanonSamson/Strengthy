@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import OurTrainers from "@/components/OurTrainers";
-import ValuesCard from "@/components/Valuescard";
+import ValuesCard from "@/components/ValuesCard";
 import Image from "next/image";
 
 export default function About() {
