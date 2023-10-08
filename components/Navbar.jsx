@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className=" text-sm h-[60px] px-5 flex items-center justify-between ">
+    <nav className=" fixed top-0 right-0 w-full z-40 bg-white text-sm h-[60px] px-5 flex items-center justify-between ">
       <Link href="/">
         <Image src="/images/logo.svg" alt="Logo" width={100} height={50} />
       </Link>
@@ -64,23 +64,23 @@ const Navbar = () => {
         <li>
           <Link
             className={` ${
-              pathname == "/news"
+              pathname == "/blog"
                 ? "  border-b-2 duration-200 border-customGreen text-customGreen  "
                 : ""
             } py-2 px-5`}
-            href="/news"
+            href="/blog"
           >
-            News
+            Blog
           </Link>
         </li>
         <li>
           <Link
             className={` ${
-              pathname == "/contact"
+              pathname == "/contactus"
                 ? "  border-b-2 duration-200 border-customGreen text-customGreen  "
                 : ""
             } py-2 px-5`}
-            href="/contact"
+            href="/contactus"
           >
             Contact
           </Link>
