@@ -10,13 +10,13 @@ const Contact = () => {
   const [selectedFaq, setSelectedFaq] = useState(null);
   return (
     <div>
-      <header className=" overflow-hidden text-customWhite   bg-[#1C2128] h-[400px] mx-5 relative mb-10 flex items-center justify-center flex-col ">
+      <header className=" overflow-hidden text-customWhite   bg-[#1C2128] h-[400px] md:mx-5 relative p-5 md:mb-10 flex items-center justify-center flex-col ">
         <div className=" relative">
-          <h1 className=" absolute  top-1 animate-pulse text-customGray3 z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+          <h1 className=" absolute  top-1 text-4xl md:text-5xl animate-pulse text-customGray3 z-1 max-w-[400px] text-center stroke pb-5 font-extrabold">
             Contact Us
           </h1>
  
-          <h1 className="  relative z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+          <h1 className="  relative z-1 text-4xl md:text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
             Contact Us
           </h1>
         </div>
@@ -25,19 +25,19 @@ const Contact = () => {
           src="/images/classes/hero-2.png"
           width={500}
           height={500}
-          className=" absolute left-[50px]  opacity-70 w-auto top-0 h-[350px] "
+          className=" absolute left-[50px]  opacity-70 w-auto top-0  h-[150px] md:h-[350px] "
         />
         <Image
           src="/images/classes/hero-1.png"
           width={500}
           height={500}
-          className=" absolute right-0  w-auto opacity-70 top-0 h-[350px] "
+          className=" absolute right-0  w-auto opacity-70 top-0  h-[150px] md:h-[350px] "
         />
         <Image
           src="/images/homepage/hero-3.png"
           width={500}
           height={500}
-          className=" absolute right-[20%]  w-auto opacity-70 -bottom-[100px] h-[350px] "
+          className=" absolute right-[20%]  w-auto opacity-70 -bottom-[100px]  h-[150px] md:h-[350px] "
         />
 
         <Image
@@ -48,13 +48,13 @@ const Contact = () => {
         />
       </header>
       <section>
-        <div className=" grid-cols-7 text-customGray3 items-center  grid gap-10  max-w-[1100px] pt-14 mx-auto pb-[100px] text-sm">
-          <div className=" col-span-4 w-[80%]">
+        <div className=" mx-2 flex flex-col md:grid-cols-7 text-customGray3 items-center  md:grid gap-10  max-w-[1100px] pt-14 md:mx-auto pb-[100px] text-sm">
+          <div className="w-full col-span-4 md:w-[80%]">
             <div>
               <span className=" text-customBlue tracking-[5px] font-medium uppercase">
                 WELCOME TO STRENGTHY
               </span>
-              <h1 className=" text-3xl font-semibold">Get In Touch With Us</h1>
+              <h1 className=" text-2xl md:text-3xl font-semibold">Get In Touch With Us</h1>
               <p className=" my-4">
                 If you have any feedback or questions about our clubs, our
                 website or our services in general, please contact us by filling
@@ -81,9 +81,9 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className=" col-span-3 w-full bg-customWhite p-10">
-            <h2 className=" text-3xl font-semibold">Send Us a Message</h2>
-            <p className="   text-customBlue">
+          <div className=" col-span-3 w-full bg-customWhite p-5 md:p-10">
+            <h2 className="text-2xl md:text-3xl font-semibold">Send Us a Message</h2>
+            <p className=" text-customBlue">
               Your email address will not be published *
             </p>
             <form action="" className=" grid gap-4 mt-10">
@@ -105,8 +105,8 @@ const Contact = () => {
           className=" absolute left-0 bottom-0 z-0 "
         />
       </section>
-      <section className=" h-[500px] relative bg-contact-bg mb-[100px] flex items-center justify-center">
-        <div className=" grid-cols-3 text-customGray3 bg-customGreen items-center  grid  max-w-[1100px] mx-auto p-10 text-sm">
+      <section className="p-5 min-h-[500px] relative bg-contact-bg mb-[100px] flex items-center justify-center">
+        <div className=" md:grid-cols-3 text-customGray3 bg-customGreen items-center  grid  max-w-[1100px] mx-auto p-10 text-sm">
           <ContactCard
             icon="phone"
             heading="Phone"
@@ -118,7 +118,7 @@ const Contact = () => {
             heading="Mail"
             contact="fitnessfit@gmail.com"
             text="Capitalized on hanging frut to identify with additional"
-            style="border-x border-customGray"
+            style=" border-y md:border-x border-customGray"
           />
           <ContactCard
             icon="location"
@@ -129,12 +129,12 @@ const Contact = () => {
         </div>
       </section>
       <section className=" relative ">
-        <div className=" relative z-10 text-center  max-w-[1100px] mx-auto py-[100px] mb-[100px]">
+        <div className=" relative z-10 text-center  max-w-[1100px] mx-auto py-[50px] md:py-[100px] mb-[100px]">
           <div className=" pb-5">
-            <span className=" uppercase   font-medium tracking-[5px] text-customBlue">
+            <span className=" uppercase  font-medium tracking-[5px] text-customBlue">
               FAG
             </span>
-            <h4 className=" text-2xl font-semibold ">
+            <h4 className="text-xl text-center md:text-2xl font-semibold ">
               Frequently Asked Questions
             </h4>
           </div>
@@ -149,13 +149,13 @@ const Contact = () => {
                       setSelectedFaq(null);
                     }
                   }}
-                  className="  w-full flex p-3 justify-between items-center border-b border-"
+                  className="text-start w-full flex p-3 justify-between items-center border-b border-"
                 >
                   {faq.question}
                   <Icon name="down" size={16} className={` ${index === selectedFaq  ? " rotate-180" :" rotate-0"} duration-200 `} />
                 </button>
                 {index === selectedFaq && (
-                  <p className=" text-start pb-5 px-2 text-[12px] mt-2 ">
+                  <p className="  pb-5 px-2 text-[12px] mt-2 ">
                     {faq.answer}
                   </p>
                 )}

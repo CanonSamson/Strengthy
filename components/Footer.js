@@ -6,12 +6,12 @@ import Icon from "./Icon";
 const Footer = () => {
     return (
         <footer className=" bg-customGray text-customWhite text-sm ">
-            <div className=" flex  text-4xl font-bold items-center bg-footer-image h-[220px] justify-center w-full">
+            <div className=" flex text-center text-2xl md:text-4xl font-bold items-center bg-footer-image h-[220px] justify-center w-full">
                 <span>Follow me on <strong className=" underline">Instagram</strong></span>
             </div>
             <div className="  max-w-[1100px]  mx-auto">
 
-                <div className=" grid grid-cols-3 max-w-[1200px] py-[100px] mx-auto gap-10">
+                <div className="md:px-0 px-2 grid md:grid-cols-3 max-w-[1200px] py-[100px] mx-auto gap-10">
                     <div>
                         <Link href="/">
                             <Image src="/images/logo-v2.svg" alt="Logo" width={100} height={50} />

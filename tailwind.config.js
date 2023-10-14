@@ -30,7 +30,9 @@ module.exports = {
         'about-image': "url('/images/aboutpage/photo.png')", // Specify the path to your image
         'classes-image': "url('/images/classes/Background-Image.png')", // Specify the path to your image
         'contact-bg': "url('/images/contact/bg.png')", // Specify the path to your image
-      },
+        'min-bg': "url('/images/Background-Image.png')", // Specify the path to your image
+      }
+,
     },
   },
   plugins: [],

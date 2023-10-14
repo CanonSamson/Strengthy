@@ -10,7 +10,7 @@ const BlogCard = ({ date, tag, heading, text, image }) => {
         hasImage
           ? "bg-customWhite text-customWhite"
           : "bg-customWhite text-customGray"
-      } text-sm p-10`}
+      } text-sm p-4 md:p-10`}
     >
       {hasImage && (
         <Image

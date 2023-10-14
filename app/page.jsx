@@ -11,16 +11,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <header className=" overflow-hidden text-customWhite   bg-[#1C2128] h-[400px] mx-5 relative mb-10 flex items-center justify-center flex-col ">
-        <div className=" relative">
-          <h1 className=" absolute  top-1 right-[10px] animate-pulse text-customGray3 z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+      <header className=" overflow-hidden text-customWhite   bg-[#1C2128] h-[400px] md:mx-5 relative md:mb-10 flex items-center justify-center flex-col ">
+        <div className=" relative z-20 mx-4 md:mx-0">
+          <h1 className=" absolute  top-1 animate-pulse text-customGray3 z-1 text-4xl md:text-5xl max-w-[400px] text-center stroke md:pb-5 font-extrabold">
             Keep Your Body Fit & Strong
           </h1>
-          <h1 className="  relative z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+          <h1 className="  relative z-1 text-4xl md:text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
             Keep Your Body Fit & Strong
           </h1>
         </div>
-        <div className=" relative z-1 flex items-center gap-4">
+        <div className=" relative z-20 flex items-center gap-4">
           <Button
             text="Start Today"
             style="  bg-customGreen text-customGray3 "
@@ -35,31 +35,31 @@ export default function Home() {
           src="/images/homepage/hero-2.png"
           width={500}
           height={500}
-          className=" absolute left-[50px]  opacity-70 w-auto top-0 h-[350px] "
+          className=" w-auto  md:h-[350px] absolute left-[50px]  opacity-70 top-0 h-[100px] "
         />
         <Image
           src="/images/homepage/hero-4.png"
           width={500}
           height={500}
-          className=" absolute right-0  w-auto opacity-70 top-0 h-[350px] "
+          className="md:h-[350px]  absolute right-0  w-auto opacity-70 top-0 h-[100px] "
         />
         <Image
           src="/images/homepage/hero-3.png"
           width={500}
           height={500}
-          className=" absolute right-0  w-auto opacity-70 -top-[50px] h-[350px] "
+          className="md:h-[350px] absolute right-0  w-auto opacity-70 -top-[50px] h-[100px] "
         />
         <Image
           src="/images/homepage/hero-5.png"
           width={500}
           height={500}
-          className=" absolute right-0 opacity-70  w-auto bottom-0 h-[350px] "
+          className=" md:h-[350px]  absolute right-0 opacity-70  w-auto bottom-0 h-[100px] "
         />
         <Image
           src="/images/homepage/hero-1.png"
           width={500}
           height={500}
-          className=" absolute left-0 opacity-70  w-auto bottom-0 h-[250px] "
+          className="md:h-[250px]  absolute left-0 opacity-70  w-auto bottom-0 h-[100px] "
         />
       </header>
 
@@ -70,18 +70,18 @@ export default function Home() {
           height={224.15}
           className=" absolute right-0 top-4 opacity-70  bottom-0  "
         />
-        <div className="  max-w-[1100px] pt-14 mx-auto">
+        <div className=" px-2 md:px-0  max-w-[1100px] pt-14 mx-auto">
           <div className=" relative z-1 flex items-center justify-between ">
             <div>
               <p className=" text-customBlue text-xs">OUR FITNESS TRAINING</p>
-              <h2 className=" text-2xl font-medium">Upcoming Classes</h2>
+              <h2 className=" text-xl md:text-2xl font-medium">Upcoming Classes</h2>
             </div>
             <Button text="More Class" style=" text-white bg-customGray3 " />
           </div>
           <Trainnings number={3} />
         </div>
-        <div className=" bg-customGray3 w-full mt-[100px] overflow-hidden px-5 tracking-[15px]  h-[80px] text-4xl font-bold text-customWhite flex items-center">
-          <span className="  min-w-[2000px]">
+        <div className=" bg-customGray3 w-full mt-[100px] overflow-hidden px-5 tracking-[5px] md:tracking-[15px]  h-[80px] text-4xl font-bold text-customWhite flex items-center">
+          <span className=" min-w-[2000px]">
             FOCUS ON YOUR <span className=" text-customGreen">FITNESS</span> NOT
             YOUR LOSS
           </span>
@@ -95,7 +95,7 @@ export default function Home() {
           height={224.15}
           className=" absolute right-0 -top-20 opacity-70  bottom-0  "
         />
-        <div className=" flex items-start gap-5 text-sm  pb-[100px] max-w-[1100px] mx-auto">
+        <div className=" px-2 md:px-0 grid md:flex items-start gap-5 text-sm  pb-[100px] max-w-[1100px] mx-auto">
           <div>
             <div className=" max-w-[80%]">
               <span className=" text-customBlue text-xs">
@@ -156,20 +156,20 @@ export default function Home() {
         </div>
 
         <div>
-          <div className=" grid grid-cols-4 border-y mb-[100px] justify-center items-center py-4 max-w-[1100px] text-sm mx-auto ">
-            <div className="flex gap-4 justify-center items-center ">
+          <div className=" grid  grid-cols-2 px-2 gap-4 md:grid-cols-4 border-y mb-[100px] md:justify-center md:items-center py-4 max-w-[1100px] text-sm md:mx-auto ">
+            <div className="flex gap-4 md:justify-center items-center ">
               <span className=" text-customWhite bg-customGray3 p-2">01</span>
               <span>Fitnes Taining</span>
             </div>
-            <div className="flex gap-4 justify-center items-center ">
+            <div className="flex gap-4 md:justify-center items-center ">
               <span className=" text-customWhite bg-customGray3 p-2">02</span>
               <span>Regular Routine</span>
             </div>
-            <div className="flex gap-4 justify-center items-center ">
+            <div className="flex gap-4 md:justify-center items-center ">
               <span className=" text-customWhite bg-customGray3 p-2">03</span>
               <span>Deit Maintenance</span>
             </div>
-            <div className="flex gap-4 justify-center items-center ">
+            <div className="flex gap-4 md:justify-center items-center ">
               <Image
                 src="/images/homepage/google-logo.svg"
                 width={50}
@@ -190,8 +190,8 @@ export default function Home() {
 
       <WorkingSchedule />
 
-      <div className="  pb-[100px] relative overflow-hidden">
-        <div className=" relative z-10 flex items-center gap-5 justify-center">
+      <div className=" py-[50px]  md:pb-[100px] relative overflow-hidden">
+        <div className=" overflow-x-auto px-2  relative z-10 flex items-center gap-5 ">
           <ReviewCard
             image="/images/homepage/user-2-image.png"
             name="Nattasha"
@@ -237,8 +237,8 @@ export default function Home() {
       </div>
       <OurTrainers  number={3} />
       <section className=" text-sm relative bg-customBlue text-white ">
-        <div className=" grid grid-cols-7  py-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto mb-[100px]">
-          <div className="col-span-3 ">
+        <div className="md:px-0 px-2 md:grid md:grid-cols-7  py-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto mb-[50px] md:mb-[100px]">
+          <div className="md:col-span-3 ">
             <span className=" uppercase  font-semibold "> Gym AMENITIES</span>
             <h5 className=" text-2xl font-semibold">The Unique Standard</h5>
             <p className=" my-5">
@@ -255,7 +255,7 @@ export default function Home() {
               className=" object-cover object-center h-[400px]"
             />
           </div>
-          <div className=" col-span-4 border-t">
+          <div className=" md:col-span-4 border-t">
             <BenifitCard
               heading="LOCKERS"
               text="Secure lockers that work by you choosing a four digit code."
@@ -287,19 +287,19 @@ export default function Home() {
           src="/images/homepage/Benifit.svg"
           width={500.42}
           height={224.15}
-          className=" absolute  pb-[100px] left-0 z-10 bottom-0 opacity-70   "
+          className=" absolute h-[124.15px] w-[200.42px] md:h-[224.15px] md:w-[500.42px]  md:pb-[100px] left-0 z-10 bottom-0 opacity-70   "
         />
       </section>
 
       <section className=" relative text-sm  ">
-        <div className=" pt-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto mb-[50px]">
+        <div className=" pt-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto  md:mb-[50px]">
           <div className=" text-center">
             <span className=" uppercase  font-medium tracking-[5px] text-customBlue">
               Our Plan
             </span>
             <h4 className=" text-2xl font-semibold ">Choose the Program</h4>
           </div>
-          <div className=" grid grid-cols-3 gap-5 items-start mt-[70px]">
+          <div className=" grid md:grid-cols-3 md:px-0 px-2 gap-5 items-start mt-[40px] md:mt-[70px]">
             <div className=" bg-customWhite p-4 text-center pb-10 ">
               <div className=" py-5 border-b border-[#D3D3D3] flex items-center gap-2">
                 <Image
@@ -413,7 +413,7 @@ export default function Home() {
         />
       </section>
       <section className=" relative text-sm  ">
-        <div className=" py-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto mb-[100px]">
+        <div className=" md:px-0 px-2 py-[100px] gap-20 items-start relative z-0  max-w-[1100px] mx-auto mb-[100px]">
           <h6 className=" text-2xl font-semibold ">Articles & News</h6>
           <div className=" mt-[50px] grid gap-4 max-w-[800px] mx-auto">
             <BlogCard

@@ -37,14 +37,14 @@ const trainingsData = [
 const Trainnings = ({ number }) => {
   const trainingsDat = trainingsData.slice(0, number);
   return (
-    <div className=" grid gap-5 text-sm grid-cols-3 mt-10">
+    <div className=" grid gap-5 text-sm  md:grid-cols-3 mt-10">
       {trainingsDat.map((training, index) => (
         <div key={index}>
           <Image
             src={training.imageSrc}
             width={500}
             height={300}
-            className="h-[300px] object-cover object-top w-full"
+            className="h-[300px] bg-customGray2 object-cover object-top w-full"
           />
           <div className="mt-5">
             <h5 className="font-semibold text-xl">{training.title}</h5>

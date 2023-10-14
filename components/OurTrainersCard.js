@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Icon from "./Icon";
+import Link from "next/link";
 
-const OurTrainersCard = ({ image, name, star, specialisations, instagram, facebook, twitter }) => {
+const OurTrainersCard = ({ image, name, star, id, specialisations, instagram, facebook, twitter }) => {
     return (
-        <div className=" bg-customGray text-customWhite text-sm ">
+        <Link href={`/trainers/${id}`} className=" bg-customGray text-customWhite text-sm ">
             <Image
                 src={image}
                 alt="name"
@@ -45,7 +46,7 @@ const OurTrainersCard = ({ image, name, star, specialisations, instagram, facebo
                 }
 
             </ul>
-        </div>
+        </Link>
     );
 }
 

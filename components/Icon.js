@@ -1,8 +1,8 @@
 // components/Icon.js
 import React from 'react';
 import { FaGithub, FaTwitter, FaFacebook, /* ... and other icons ... */ } from 'react-icons/fa';
-import { FiChevronUp, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { AiFillCheckCircle, AiOutlineMail, AiOutlineDown } from 'react-icons/ai';
+import { FiChevronUp, FiChevronLeft, FiChevronRight , FiMenu} from 'react-icons/fi';
+import { AiFillCheckCircle, AiOutlineMail, AiOutlineDown, AiOutlineClose } from 'react-icons/ai';
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5'
 const iconComponents = {
   github: FaGithub,
@@ -15,7 +15,9 @@ const iconComponents = {
   check: AiFillCheckCircle,
   phone: IoCallOutline,
   mail: AiOutlineMail,
-  location: IoLocationOutline
+  location: IoLocationOutline,
+  menu: FiMenu,
+  close: AiOutlineClose
 };
 
 const Icon = ({ name, ...props }) => {

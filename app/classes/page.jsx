@@ -5,12 +5,12 @@ import Image from "next/image";
 const Classes = () => {
   return (
     <div>
-      <header className=" overflow-hidden text-customWhite   bg-[#1C2128] h-[400px] mx-5 relative mb-10 flex items-center justify-center flex-col ">
+      <header className=" overflow-hidden text-customWhite bg-[#1C2128] h-[400px] p-2 md:mx-5 relative mb-10 flex items-center justify-center flex-col ">
         <div className=" relative">
-          <h1 className=" absolute  top-1 right-[10px] animate-pulse text-customGray3 z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+          <h1 className=" absolute  top-1 text-4xl md:text-5xl right-[10px] animate-pulse text-customGray3 z-1 max-w-[400px] text-center stroke pb-5 font-extrabold">
             Classes
           </h1>
-          <h1 className="  relative z-1 text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
+          <h1 className="  relative z-1 text-4xl md:text-5xl max-w-[400px] text-center stroke pb-5 font-extrabold">
             Classes
           </h1>
         </div>
@@ -19,19 +19,19 @@ const Classes = () => {
           src="/images/classes/hero-2.png"
           width={500}
           height={500}
-          className=" absolute left-[50px]  opacity-70 w-auto top-0 h-[350px] "
+          className=" absolute left-[50px]  opacity-70 w-auto top-0  h-[150px] md:h-[350px] "
         />
         <Image
           src="/images/classes/hero-1.png"
           width={500}
           height={500}
-          className=" absolute right-0  w-auto opacity-70 top-0 h-[350px] "
+          className=" absolute right-0  w-auto opacity-70 top-0  h-[150px] md:h-[350px] "
         />
         <Image
           src="/images/homepage/hero-3.png"
           width={500}
           height={500}
-          className=" absolute right-[20%]  w-auto opacity-70 -bottom-[100px] h-[350px] "
+          className=" absolute right-[20%]  w-auto opacity-70 -bottom-[100px]  h-[150px] md:h-[350px] "
         />
 
         <Image
@@ -48,7 +48,7 @@ const Classes = () => {
           height={224.15}
           className=" absolute right-0 top-4 opacity-70  bottom-0  "
         />
-        <div className="  max-w-[1100px] pt-14 mx-auto">
+        <div className="  max-w-[1100px] px-2 md:px-0 pt-14 mx-auto">
           <div className=" pb-5 text-center">
             <span className=" uppercase   font-medium tracking-[5px] text-customBlue">
               Our Trainers
